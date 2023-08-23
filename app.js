@@ -19,7 +19,7 @@ app.use(
 );
 
 app.use(session({
-  secret: "This is my big fat personal secret.",
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: false
 }));
